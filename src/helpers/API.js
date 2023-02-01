@@ -1,1 +1,1 @@
-export const API_URL = "http://substantiveresearch.pythonanywhere.com/"
+export const API_URL = "https://substantiveresearch.pythonanywhere.com/"
