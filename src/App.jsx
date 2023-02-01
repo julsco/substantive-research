@@ -47,7 +47,8 @@ function App() {
 
   const interactions = sectors.map(sector => {
     const numberOfInteractions = dataClient?.filter(data => data.name === sector).length;  //Get the interactions for each sector
-    const sectorInteractions = {"sector": `${sector}`, "number_interactions": `${numberOfInteractions}`}; // create an object of type { sector: sectorName, number_interactions: numberInteractions}
+    const sectorID = dataClient?.find(data => data.name === sector).sector_id; //Get the sector ID
+    const sectorInteractions = {"sector": `${sector}`, "sector_id" : sectorID, "number_interactions": `${numberOfInteractions}`}; // create an object of type { sector: sectorName, sector_id: id, number_interactions: numberInteractions}
     return sectorInteractions
   });
 
@@ -59,6 +60,8 @@ function App() {
 
   //Sort by descending
   interactions.sort((a, b) => b.percentage - a.percentage);
+
+
 
   return (
     <WindowWidthContext.Provider value={windowWidth}>

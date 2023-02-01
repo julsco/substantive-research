@@ -6,7 +6,6 @@ import { WindowWidthContext } from '../App';
 
 ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
-
 export default function PieChart( { dataUser }) {
 
   const windowWidth = useContext(WindowWidthContext);

@@ -23,8 +23,8 @@ body {
 
 @media only screen and (max-width: 1420px) {
     .graphs__container {
-      flex-direction: column;
-      gap: 4rem;
+        flex-direction: column;
+        gap: 4rem;
     }
 
     .table-graph {
@@ -37,16 +37,16 @@ body {
         padding-top: 0;
         padding-left: 0;
     }
-  }
+}
 
-  @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .pie__chart{
         width: 900px;
         height: 900px;
     }
-  }
+}
 
-  @media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
     .pie__chart{
         height: 800px;
         padding-bottom: 4rem;
@@ -54,5 +54,5 @@ body {
 
     .graphs__container {
         gap: 0;
-      }
-  }
+        }
+}
