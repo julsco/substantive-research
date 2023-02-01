@@ -1,6 +1,6 @@
 # Substantive Research test
 
-To run this programm run "npm install" to download dependencies and devDependencies that are listed in package.json.
+To run this program run "npm install" to download dependencies and devDependencies that are listed in package.json.
 After, run "npm run dev"
 
 Live version at https://julian-scotti-substantive-research.netlify.app/
