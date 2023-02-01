@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #EEF1F4;
+}
+
+.navigator {
+    height: 15vh;
+    background-color: #112A42;
+}
+
+.landing {
+    height: auto;
+    background-color: #EEF1F4;
+}
+
+.pie__chart{
+    width: 1200px;
+    height: 1000px;
+}
+
+@media only screen and (max-width: 1420px) {
+    .graphs__container {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .table-graph {
+        width: 90%;
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+
+    .pie__chart {
+        padding-top: 0;
+        padding-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .pie__chart{
+        width: 900px;
+        height: 900px;
+    }
+  }
+
+  @media only screen and (max-width: 640px){
+    .pie__chart{
+        height: 800px;
+        padding-bottom: 4rem;
+    }
+
+    .graphs__container {
+        gap: 0;
+      }
+  }
