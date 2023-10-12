@@ -34,7 +34,7 @@ function App() {
     fetch(API_URL)
        .then((response) => response.json())
        .then((data) => {
-          setDataClient(data);
+          setDataClient(data.interactions);
        })
        .catch((err) => {
           console.log(err.message);

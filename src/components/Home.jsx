@@ -16,7 +16,7 @@ export default function Home() {
           <TableSector data={interactions} />
         </div>
         <div className='pie__chart flex items-center justify-center pt-10 pl-14 w-full'>
-            <PieChart dataUser={interactions} />
+          <PieChart dataUser={interactions} />
         </div>
       </div>
     </div>
